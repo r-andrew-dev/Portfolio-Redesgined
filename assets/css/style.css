@@ -1,0 +1,52 @@
+
+/* font-family: 'Karla', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Rubik Mono One', sans-serif; */
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body, html { height: 100%; 
+    background-image: url("../images/main-background-portfolio.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    background-color: #F9F4EB;
+}
+
+h1 {
+    font-size: 80px;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    /* padding: 2%; */
+}
+
+#picture {
+    margin: 3%;
+    width: 50%;
+}
+
+p {
+    margin: 3%;
+    font-family: 'Karla', sans-serif;
+}
+
+.button-primary {
+    background-color: black;
+    margin: 2% auto;
+    display: block;
+}
+
+}
+
+
+
+
+    
