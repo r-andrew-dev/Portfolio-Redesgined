@@ -46,11 +46,40 @@ p {
     display: block;
 }
 
+.button-primary.custom:visited {
+    background-color: black;
+}
+
 .button-primary.custom:hover {
     background-color: purple;
 }
 
+.button-primary.custom:active {
+    background-color: black;
+}
 
+#OS-image, #GudVibes-image, #BTVS-image {
+    width: 300px;
+    margin: 3%;
+    border: none;
+    opacity: 0.6;
+    transition: 0.3s
+
+}
+
+#OS-image:hover, #GudVibes-image:hover, #BTVS-image:hover {
+    border: 3px solid purple;
+    opacity: 1;
+
+}
+
+.hidden1 {
+    text-align: center;
+}
+
+.buffy {
+    display: inline-block;
+}
 
 
     
