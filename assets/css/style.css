@@ -25,6 +25,8 @@ h1 {
     font-size: 80px;
     font-family: 'Rubik', sans-serif;
     text-align: center;
+    background-color: black;
+    color: #F9F4EB;
     /* padding: 2%; */
 }
 
@@ -38,12 +40,14 @@ p {
     font-family: 'Karla', sans-serif;
 }
 
-.button-primary {
+.button-primary.custom {
     background-color: black;
     margin: 2% auto;
     display: block;
 }
 
+.button-primary.custom:hover {
+    background-color: purple;
 }
 
 
