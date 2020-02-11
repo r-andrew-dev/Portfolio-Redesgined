@@ -25,7 +25,7 @@ h1 {
     font-size: 80px;
     font-family: 'Rubik', sans-serif;
     text-align: center;
-    background-color: black;
+    background-color: #34424D;
     color: #F9F4EB;
     /* padding: 2%; */
 }
@@ -35,19 +35,31 @@ h1 {
     width: 50%;
 }
 
+#contact {
+    position: fixed;
+    width: 80%;
+    top: 35%;
+    left: 10%;
+    background-color: #34424D;
+    color: #F9F4EB;
+    text-align: center;
+}
+
 p {
     margin: 3%;
     font-family: 'Karla', sans-serif;
+    color: #34424D;
 }
 
 .button-primary.custom {
-    background-color: black;
-    margin: 2% auto;
+    background-color: #34424D;
+    margin: 1% auto;
+    text-align: center;
     display: block;
 }
 
 .button-primary.custom:visited {
-    background-color: black;
+    background-color:#34424D;
 }
 
 .button-primary.custom:hover {
@@ -55,7 +67,7 @@ p {
 }
 
 .button-primary.custom:active {
-    background-color: black;
+    background-color: #34424D;
 }
 
 #OS-image, #GudVibes-image, #BTVS-image {
@@ -71,6 +83,9 @@ p {
     border: 3px solid purple;
     opacity: 1;
 
+}
+.current-img {
+    width: 600px;
 }
 
 .hidden1 {
