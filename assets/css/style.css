@@ -30,9 +30,34 @@ h1 {
     /* padding: 2%; */
 }
 
+a {
+    font-family: 'Karla', sans-serif;
+}
+
+.form.contact-me {
+    position: fixed;
+    top: 3%;
+    margin: 10%;
+    background-color: #34424D;
+    color: #F9F4EB;
+    width: 80%;
+}
+
+.form-piece, label {
+    margin: 1% 5%;
+    width: 90%;
+}
+
 #picture {
     margin: 3%;
     width: 50%;
+}
+
+.contact:hover {
+
+    background-color: purple;
+    color: purple;
+
 }
 
 #contact {
@@ -43,6 +68,7 @@ h1 {
     background-color: #34424D;
     color: #F9F4EB;
     text-align: center;
+    font-family: 'Rubik', sans-serif;
 }
 
 p {
@@ -51,22 +77,22 @@ p {
     color: #34424D;
 }
 
-.button-primary.custom {
+.custom {
     background-color: #34424D;
     margin: 1% auto;
     text-align: center;
     display: block;
 }
 
-.button-primary.custom:visited {
+.custom:visited {
     background-color:#34424D;
 }
 
-.button-primary.custom:hover {
+.custom:hover {
     background-color: purple;
 }
 
-.button-primary.custom:active {
+.custom:active {
     background-color: #34424D;
 }
 
