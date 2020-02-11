@@ -1,7 +1,7 @@
 
 
 $(".One").on("click", function() {
-    $(".One").addClass("Two");
+    $(".One").text("Reach Out");
     $(".Two").removeClass("One");
     $(".Two").text("Reach Out");
 
@@ -21,17 +21,17 @@ $(".One").on("click", function() {
         $(this).removeClass("work");
         $(this).css("opacity", "1");
         $(".work").hide();
-        $(".Two").addClass("Three");
-        $(".Three").removeClass("Two")
+        $(".One").addClass("Three");
+        $(".Three").removeClass("One")
         $(".Three").text("Back to Work");
         $(".Site").css("display", "inline");
         $(".Site").attr("href", $(this).data("site"));
     });
 
-    $("#button-holder").on("click", ".Two", function() {
-        $(".container").css("display", "none");
-        $("#contact").css("display", "block");
-    })
+    // $("#button-holder").on("click", ".Two", function() {
+    //     $(".container").css("display", "none");
+    //     $("#contact").css("display", "block");
+    // })
 
     $("#button-holder").on("click", ".Three", function() {
         console.log("clicked");
