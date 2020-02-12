@@ -1,9 +1,10 @@
 
 
 $(".One").on("click", function() {
-    $(".One").text("Reach Out");
-    $(".Two").removeClass("One");
-    $(".Two").text("Reach Out");
+    $("#contact-button").css("display","block");;
+    $(".One").text("About");
+    $("#work-button").removeClass("One");
+    $("#work-button").addClass("Two");
 
 
     $("#bio, #picture").fadeOut("slow", function() {
@@ -11,6 +12,14 @@ $(".One").on("click", function() {
     });
 
 });
+
+$("#button-holder").on("click", ".Two", function(){
+        $(".hidden1").fadeOut("slow", function() {
+            $("#bio, #picture").fadeIn("slow");
+        })
+     
+
+})
 
     $(".work").on("click", function() {
         $(this).css({"width": "600px", "margin": "10% auto", "opacity": "1", "display": "block"});
@@ -28,10 +37,10 @@ $(".One").on("click", function() {
         $(".Site").attr("href", $(this).data("site"));
     });
 
-    // $("#button-holder").on("click", ".Two", function() {
-    //     $(".container").css("display", "none");
-    //     $("#contact").css("display", "block");
-    // })
+    $("#button-holder").on("click", "#contact-button", function() {
+        $(".container").css("display", "none");
+        $("#contact").css("display", "block");
+    })
 
     $("#button-holder").on("click", ".Three", function() {
         console.log("clicked");

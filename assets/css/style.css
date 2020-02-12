@@ -10,7 +10,7 @@ font-family: 'Rubik Mono One', sans-serif; */
 }
 
 body, html { height: 100%; 
-    background-image: url("../images/main-background-portfolio.jpg");
+    background-image: url("../images/background-image2.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -41,6 +41,11 @@ a {
     background-color: #34424D;
     color: #F9F4EB;
     width: 80%;
+}
+
+input, select, textarea {
+
+    color: #34424D;
 }
 
 .form-piece, label {
@@ -79,7 +84,7 @@ p {
 
 .button-primary.custom, .button.button-primary.custom {
     background-color: #34424D;
-    margin: 1% auto;
+    margin: .5% auto;
     text-align: center;
     display: block;
 }
@@ -100,13 +105,13 @@ p {
     width: 300px;
     margin: 3%;
     border: none;
-    opacity: 0.6;
+    opacity: 0.4;
     transition: 0.5s
 
 }
 
 #OS-image:hover, #GudVibes-image:hover, #BTVS-image:hover {
-    /* border: 1px solid purple; */
+    border: 1px solid purple;
     opacity: 1;
 
 }
