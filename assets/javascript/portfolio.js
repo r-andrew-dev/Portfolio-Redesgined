@@ -5,7 +5,7 @@ $("#button-holder").on("click", ".One", function() {
     $(".One").text("About");
 
 
-    $("#bio, #picture").fadeOut("slow", function() {
+    $("#About").fadeOut("slow", function() {
         $(".hidden1").fadeIn("slow");
         $("#work-button").addClass("Two");
         $("#work-button").removeClass("One");
@@ -15,7 +15,7 @@ $("#button-holder").on("click", ".One", function() {
 
 $("#button-holder").on("click", ".Two", function(){
         $(".hidden1").fadeOut("slow", function() {
-            $("#bio, #picture").fadeIn("slow");
+            $("#About").fadeIn("slow");
             $("#work-button").text("Work Sample");
             $("#work-button").addClass("One");
             $("#work-button").removeClass("Two");
@@ -41,7 +41,7 @@ $("#button-holder").on("click", ".Two", function(){
     });
 
     $("#button-holder").on("click", "#contact-button", function() {
-        $(".container, .hidden1").fadeOut("slow" , function() {
+        $(".container, .hidden1, #button-holder").fadeOut("slow" , function() {
         $("#contact").fadeIn("fast");
         })
     })
@@ -63,10 +63,20 @@ $("#button-holder").on("click", ".Two", function(){
     $("#button-holder2").on("click", ".Four", function() {
 
         $("#contact, button-holder2").fadeOut("slow", function() {
-            $(".container, #bio, #picture").fadeIn("slow");
+            $(".container, #About, #button-holder").fadeIn("slow");
             $("#work-button").text("Work Sample")
             $("#work-button").removeClass("Two");
             $("#work-button").addClass("One");
         })
     
     });
+
+    $("#button-holder2").on("click", ".Five", function() {
+            $("#work-button").removeClass("One");
+        $("#contact, button-holder2, #About").fadeOut("slow", function() {
+            $(".container, .hidden1, #button-holder").fadeIn("slow");
+            $("#work-button").text("About")
+            $("#work-button").addClass("Two");
+
+        })
+    })
