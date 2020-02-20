@@ -1,14 +1,14 @@
 
 
-$(".One").on("click", function() {
+$("#button-holder").on("click", ".One", function() {
     $("#contact-button").css("display","block");;
     $(".One").text("About");
-    $("#work-button").removeClass("One");
-    $("#work-button").addClass("Two");
 
 
     $("#bio, #picture").fadeOut("slow", function() {
         $(".hidden1").fadeIn("slow");
+        $("#work-button").addClass("Two");
+        $("#work-button").removeClass("One");
     });
 
 });
@@ -16,6 +16,9 @@ $(".One").on("click", function() {
 $("#button-holder").on("click", ".Two", function(){
         $(".hidden1").fadeOut("slow", function() {
             $("#bio, #picture").fadeIn("slow");
+            $("#work-button").text("Work Sample");
+            $("#work-button").addClass("One");
+            $("#work-button").removeClass("Two");
         })
      
 
