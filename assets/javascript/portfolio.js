@@ -41,8 +41,9 @@ $("#button-holder").on("click", ".Two", function(){
     });
 
     $("#button-holder").on("click", "#contact-button", function() {
-        $(".container").css("display", "none");
-        $("#contact").css("display", "block");
+        $(".container, .hidden1").fadeOut("slow" , function() {
+        $("#contact").fadeIn("fast");
+        })
     })
 
     $("#button-holder").on("click", ".Three", function() {
@@ -57,4 +58,15 @@ $("#button-holder").on("click", ".Two", function(){
         $("#odd-row").children().attr("class", "twelve columns")
         $(".Two").text("Reach Out");
         
+    });
+
+    $("#button-holder2").on("click", ".Four", function() {
+
+        $("#contact, button-holder2").fadeOut("slow", function() {
+            $(".container, #bio, #picture").fadeIn("slow");
+            $("#work-button").text("Work Sample")
+            $("#work-button").removeClass("Two");
+            $("#work-button").addClass("One");
+        })
+    
     });
